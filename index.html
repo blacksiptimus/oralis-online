@@ -17,33 +17,40 @@
 <body>
 <main>
   <h1>Oralis privacy policy</h1>
-  <p class="meta">Effective 14 October 2026</p>
+  <p class="meta">Effective 17 October 2026</p>
   <p>Oralis is published by Aqyrix. This policy explains what the Oralis app for iPhone and Android does with information. The app id is <code>com.aqyrix.oralis</code>.</p>
 
   <h2>What Oralis does</h2>
-  <p>You record a conversation. Oralis turns that recording into a guide, such as a recipe, a repair, or a set of steps. You can edit the guide, keep a shopping list, and share it. Oralis does not ask you to create an account.</p>
+  <p>You record a conversation, or you choose a recording already on the phone. Oralis turns that recording into a guide, such as a recipe, a repair, or a set of steps. You can edit the guide, keep a shopping list, and share it. Creating an account is optional.</p>
 
-  <h2>Delete your data</h2>
-  <p>Oralis is published by Aqyrix. You can delete your Oralis data without creating an account.</p>
+  <h2 id="delete">Delete your account and data</h2>
+  <p>You can delete an Oralis account from the app, and you can ask Aqyrix to delete it if you cannot open the app.</p>
   <ol>
-    <li>Open Oralis, open the guide, and tap Delete. Confirm it. This removes that guide and its recording from the phone.</li>
-    <li>Delete the Oralis app. This removes the remaining guides, recordings, and saved minutes from the phone.</li>
+    <li>Open Oralis, open Settings, open Account, and choose Delete account. Confirm it. This removes the email address and the minutes saved with that account from the Oralis server. The phone you are using keeps the minutes it already has. A new phone will not receive them.</li>
+    <li>Open a guide and tap Delete, then confirm it. This removes that guide and its recording from the phone.</li>
+    <li>Delete the Oralis app. This removes the remaining guides and recordings from the phone.</li>
   </ol>
-  <p>The Oralis server does not keep the recording or the guide after the guide is sent back to the phone. On iPhone, the server keeps an anonymous device key, not your name, so it can check that the app is genuine. To ask Aqyrix to delete that key, email <a href="mailto:developer@aqyrix.com">developer@aqyrix.com</a> with the subject “Oralis data deletion”.</p>
-  <p>Payments are handled by Apple or Google. Deleting the app does not cancel a charge they already made.</p>
+  <p>If you cannot open the app, email <a href="mailto:developer@aqyrix.com">developer@aqyrix.com</a> from the account email with the subject “Oralis account deletion”. Aqyrix will delete the account and the minutes saved with it.</p>
+  <p>The Oralis server does not keep the recording or the guide after the guide is sent back to the phone. On iPhone, the server keeps an anonymous device key, not your name, so it can check that the app is genuine. To ask Aqyrix to delete that key, use the same email address and the subject “Oralis data deletion”.</p>
+  <p>Payments are handled by Apple or Google. Deleting the account or the app does not cancel a charge they already made.</p>
 
   <h2>What stays on your phone</h2>
-  <p>The recording, the transcript, and the guide are saved on your phone. The remaining recording minutes are saved on your phone. Deleting a guide deletes that guide and its recording from the phone. Deleting the app removes these files from the phone.</p>
+  <p>The recording, the transcript, and the guide are saved on your phone. Oralis does not keep an account library of your guides. Deleting a guide deletes that guide and its recording from the phone.</p>
+  <p>Recording time is measured in minutes. Without an account, those minutes stay on the phone. A new phone, or deleting and reinstalling the app, can lose them. On iPhone, minutes kept only on the phone stay in the device keychain. On Android, a reinstall on the same phone can restore minutes already saved for that install. The server stores a one-way hash of the device id, the remaining minutes, and the identifiers of grants and spends. It does not store your name.</p>
+
+  <h2>Optional account</h2>
+  <p>You can skip the account and keep the minutes on that phone only. If you create an account or sign in, the account is an email address and a password. The password is stored as a protected hash. Oralis does not send marketing email.</p>
+  <p>With an account, the server stores the email address, the remaining minutes, and the identifiers needed to restore purchases and spends of those minutes. The account does not include recordings, transcripts, or guides. You can sign in on a new phone with the same email and password, and the saved minutes come back.</p>
 
   <h2>What is sent to make a guide</h2>
-  <p>When you ask Oralis to make a guide, the app sends the recording, or a transcript you edited, to the Oralis server. The server is in the European Union. The server sends the audio to OpenAI to transcribe it, then sends the transcript to OpenAI to write the guide. The guide and transcript are returned to your phone.</p>
+  <p>When you ask Oralis to make a guide, the app sends the recording to the Oralis server. The server is in the European Union. The server sends the audio to OpenAI to transcribe it, then sends the transcript to OpenAI to write the guide. The guide and transcript are returned to your phone.</p>
   <p>Oralis does not keep the recording or the guide on its server after that response is sent. OpenAI processes the audio and transcript to produce the guide. OpenAI’s handling of API data is described in <a href="https://openai.com/policies/privacy-policy">OpenAI’s privacy policy</a>.</p>
 
   <h2>Checking that the request comes from the app</h2>
-  <p>On iPhone, Oralis uses Apple App Attest. The server stores an anonymous device key so it can recognize that phone on the next request. It does not store your name. On Android, the app can send a Google Play Integrity token so the server can check that the install came from Play. These checks are not used to build an advertising profile.</p>
+  <p>Before analysis, minute updates, and account actions, the app sends a phone check from Apple or Google so the server can tell that the request comes from the Oralis app. On iPhone, Oralis uses Apple App Attest. The server stores an anonymous device key so it can recognize that phone on the next request. It does not store your name. On Android, the app can send a Google Play Integrity token so the server can check that the install came from Play. These checks are not used to identify you across other apps or to build an advertising profile.</p>
 
   <h2>Purchases</h2>
-  <p>The app can be downloaded without paying. Extra recording minutes are bought through Apple or Google. Apple or Google processes the payment. Oralis does not receive your card number. The minutes added to the phone are stored on the phone.</p>
+  <p>The app can be downloaded without paying. Extra recording minutes are bought through Apple or Google. Apple or Google processes the payment. Oralis does not receive your card number. Oralis receives the result needed to add the minutes.</p>
 
   <h2>What Oralis does not do</h2>
   <p>Oralis does not sell your information. The app does not show ads and does not include a third-party advertising or analytics tracker. Oralis does not record a cellular call. A recording starts only when you press record.</p>
@@ -55,7 +62,7 @@
   <p>If this policy changes, the new version will be posted on this page with a new date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy can be sent to <a href="mailto:developer@aqyrix.com">developer@aqyrix.com</a>.</p>
+  <p>Questions about this policy, or an account deletion request, can be sent to <a href="mailto:developer@aqyrix.com">developer@aqyrix.com</a>.</p>
 </main>
 </body>
 </html>
